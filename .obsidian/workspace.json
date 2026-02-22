@@ -179,8 +179,11 @@
   },
   "active": "123ad21752713224",
   "lastOpenFiles": [
-    "01_Ontology/fact-current-liabilities-2026.md",
+    "00_Architecture/Genesis Boot Node.md",
     "03_Registry/test.md.md",
+    "00_Architecture",
+    "New folder",
+    "01_Ontology/fact-current-liabilities-2026.md",
     "02_Rules/rule-sbrm-revenue-fanout.md",
     "02_Rules/rule-sbrm-profit-loss.md",
     "02_Rules/rule-sbrm-liability-rollup.md",
@@ -204,7 +207,6 @@
     "01_Ontology/fact-non-current-liabilities-2026.md",
     "01_Ontology/fact-non-current-assets-2026.md",
     "01_Ontology/fact-expenses-2026.md",
-    "01_Ontology/fact-dividends-paid-2026.md",
     "mapper.py",
     "mapper.py.txt",
     "New Text Document.txt"
