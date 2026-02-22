@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Registry/reg-authorities-trusted.md.md",
+                "file": "00_Architecture/00_Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "reg-authorities-trusted.md"
+              "title": "00_Architecture"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "343380e8e12fb297",
   "lastOpenFiles": [
-    "03_Registry/reg-namespaces-core.md.md",
     "03_Registry/reg-authorities-trusted.md.md",
+    "03_Registry/reg-namespaces-core.md.md",
     "00_Architecture/00_Architecture.md",
     "00_Architecture/Genesis Boot Node.md",
     "03_Registry/test.md.md",
