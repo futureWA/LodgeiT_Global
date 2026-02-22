@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Ontology/fact-non-current-assets-2026.md.md",
+                "file": "01_Ontology/fact-current-liabilities-2026.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fact-non-current-assets-2026.md"
+              "title": "fact-current-liabilities-2026.md"
             }
           }
         ]
@@ -183,14 +183,32 @@
   "active": "343380e8e12fb297",
   "lastOpenFiles": [
     "01_Ontology/fact-current-assets-2026.md.md",
+    "01_Ontology/def-sbrm-reporting-period.md.md",
+    "01_Ontology/def-sbrm-reporting-entity.md.md",
+    "02_Rules/rule-sbrm-revenue-fanout.md.md",
+    "01_Ontology/fact-revenue-yellow-2026.md.md",
+    "01_Ontology/fact-revenue-green-2026.md.md",
+    "01_Ontology/fact-revenue-blue-2026.md.md",
+    "01_Ontology/fact-revenue-red-2026.md.md",
+    "02_Rules/rule-sbrm-profit-loss.md.md",
+    "01_Ontology/fact-expenses-2026.md.md",
+    "01_Ontology/fact-revenue-2026.md.md",
+    "02_Rules/rule-sbrm-equity-rollforward.md.md",
+    "01_Ontology/fact-dividends-paid-2026.md.md",
+    "01_Ontology/fact-profit-loss-2026.md.md",
+    "01_Ontology/fact-opening-equity-2025.md.md",
+    "02_Rules/rule-sbrm-accounting-equation.md.md",
+    "01_Ontology/fact-total-equity-2026.md.md",
+    "02_Rules/rule-sbrm-liability-rollup.md.md",
+    "01_Ontology/fact-non-current-liabilities-2026.md.md",
+    "01_Ontology/fact-current-liabilities-2026.md.md",
+    "01_Ontology/fact-total-liabilities-2026.md.md",
     "01_Ontology/fact-non-current-assets-2026.md.md",
     "02_Rules/rule-sbrm-asset-rollup.md.md",
     "01_Ontology/fact-total-assets-2026.md.md",
     "mapper.py",
     "mapper.py.txt",
     "New Text Document.txt",
-    "01_Ontology/def-sbrm-reporting-period.md.md",
-    "01_Ontology/def-sbrm-reporting-entity.md.md",
     "Untitled.md"
   ]
 }
