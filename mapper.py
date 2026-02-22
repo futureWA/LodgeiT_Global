@@ -95,6 +95,13 @@ def run_universal_logic_engine(path):
             else:
                 print("  [FAIL] Working Paper contradiction: Ledger does not match Statement!\n")
                 
+        # UPGRADE 3: Fixed Asset Net Book Value
+        elif "PlantAtCost" in rule_vars and "AccumulatedDep" in rule_vars and "NonCurrentAssets" in rule_vars and None not in rule_vars.values():
+            if rule_vars["NonCurrentAssets"] == (rule_vars["PlantAtCost"] - rule_vars["AccumulatedDep"]):
+                print("  [PASS] Fixed Asset Sub-Ledger ties perfectly to Non-Current Assets.\n")
+            else:
+                print("  [FAIL] Fixed Asset contradiction: Cost minus Dep does not equal Net!\n")
+                
         else:
              print("  [PENDING] Missing facts. Cannot execute proof.\n")
 
