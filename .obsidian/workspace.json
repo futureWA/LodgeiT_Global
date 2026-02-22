@@ -11,14 +11,10 @@
             "id": "343380e8e12fb297",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03_Registry/test.md.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "test.md"
+              "title": "New tab"
             }
           }
         ]
@@ -181,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "343380e8e12fb297",
+  "active": "123ad21752713224",
   "lastOpenFiles": [
     "01_Ontology/fact-current-liabilities-2026.md",
     "03_Registry/test.md.md",
