@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Ontology/wp-bank-statement-2026.md",
+                "file": "02_Rules/rule-sbrm-fixed-assets-net.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wp-bank-statement-2026"
+              "title": "rule-sbrm-fixed-assets-net"
             }
           }
         ]
@@ -183,8 +183,12 @@
   },
   "active": "343380e8e12fb297",
   "lastOpenFiles": [
-    "01_Ontology/fact-cash-ledger-2026.md",
+    "01_Ontology/fact-accumulated-depreciation-2026.md",
+    "02_Rules/rule-sbrm-fixed-assets-net.md",
+    "01_Ontology/fact-plant-at-cost-2026.md",
+    "02_Rules/rule-wp-crossref-bank.md",
     "01_Ontology/wp-bank-statement-2026.md",
+    "01_Ontology/fact-cash-ledger-2026.md",
     "00_Architecture/00_Architecture.md",
     "04_WorkingPapers",
     "03_Registry/reg-authorities-trusted.md.md",
@@ -208,10 +212,6 @@
     "01_Ontology/fact-total-equity-2026.md",
     "01_Ontology/fact-total-assets-2026.md",
     "01_Ontology/fact-revenue-yellow-2026.md",
-    "01_Ontology/fact-revenue-red-2026.md",
-    "01_Ontology/fact-revenue-green-2026.md",
-    "01_Ontology/fact-revenue-blue-2026.md",
-    "01_Ontology/fact-revenue-2026.md",
     "mapper.py",
     "mapper.py.txt",
     "New Text Document.txt"

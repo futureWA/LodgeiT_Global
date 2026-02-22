@@ -4,7 +4,7 @@ import re
 VAULT_PATH = r"C:\Users\futur\Documents\LodgeiT_Global"
 
 def run_universal_logic_engine(path):
-    print("--- LodgeiT SBRM Logic Engine: Universal Execution ---\n")
+    print("--- Open-Source SBRM Logic Engine: Universal Execution ---\n")
     facts = {}
     rules = []
 
@@ -21,9 +21,11 @@ def run_universal_logic_engine(path):
                     nid = node_id.group(1).strip()
                     nclass = node_class.group(1).strip()
                     
-                    if nclass == "FinancialFact":
+                    # UPGRADE 1: Engine now ingests WorkingPaperFacts alongside FinancialFacts
+                    if nclass in ["FinancialFact", "WorkingPaperFact"]:
                         val_match = re.search(r'fact_value:\s*([0-9.-]+)', content)
-                        concept_match = re.search(r'"?target"?:\s*"?([^"\n]+def-sbr-[^"\n]+)"?', content) 
+                        # Regex adjusted to catch both def-sbr- and def-wp- concept targets
+                        concept_match = re.search(r'"?target"?:\s*"?([^"\n]+(?:def-sbr-|def-wp-)[^"\n]+)"?', content) 
                         if val_match and concept_match:
                             facts[concept_match.group(1).strip()] = float(val_match.group(1))
                             
@@ -31,7 +33,7 @@ def run_universal_logic_engine(path):
                         params = re.findall(r'variable:\s*"?([^"\n]+)"?\s*\n\s*sbrm_label:\s*"?([^"\n]+)"?', content)
                         rules.append({"id": nid, "params": params})
 
-    print(f"Discovered {len(facts)} SBRM Facts.")
+    print(f"Discovered {len(facts)} SBRM Facts & Working Papers.")
     print(f"Discovered {len(rules)} SBRM Rules.\n")
     
     for rule in rules:
@@ -85,6 +87,13 @@ def run_universal_logic_engine(path):
                 print("  [PASS] Profit & Loss Statement is mathematically consistent.\n")
             else:
                 print("  [FAIL] Profit & Loss contradiction!\n")
+                
+        # UPGRADE 2: Bank Reconciliation Cross-Reference
+        elif "LedgerCash" in rule_vars and "StatementCash" in rule_vars and None not in rule_vars.values():
+            if rule_vars["LedgerCash"] == rule_vars["StatementCash"]:
+                print("  [PASS] Bank Reconciliation Working Paper cross-references correctly.\n")
+            else:
+                print("  [FAIL] Working Paper contradiction: Ledger does not match Statement!\n")
                 
         else:
              print("  [PENDING] Missing facts. Cannot execute proof.\n")
