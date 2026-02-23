@@ -42,5 +42,5 @@ This frame provides the machine-readable "connectors" that allow your **Prolog/D
   ]
 }
 
-[[Links to]] 
+
 
