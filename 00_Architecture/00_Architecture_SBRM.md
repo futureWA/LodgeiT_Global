@@ -59,16 +59,18 @@ We have successfully established and validated the core engine, synchronized to 
 * **Registry Layer (`03_Registry`):** Master indexes defining the required execution paths, namespace resolutions, and trusted cryptographic authorities.
 * **Execution & Maintenance:** A Python-based universal logic engine (`logic_engine.py`) for mathematical proofs, supported by an AI-driven local agent (`heal_vault.py`) for automated YAML standardization.
 
-## 3. Achieved Milestones
-* `[PASS]` Fundamental Accounting Equation (Assets = Liabilities + Equity)
-* `[PASS]` Asset Roll-Up (Current + Non-Current)
-* `[PASS]` Liability Roll-Up (Current + Non-Current)
-* `[PASS]` Profit & Loss (Revenue - Expenses)
-* `[PASS]` Equity Roll-Forward (Time Dimension: Opening + P&L - Dividends = Closing)
-* `[PASS]` Revenue Dimensional Fan-Out (Categorical Dimension: Total = Red + Blue + Green + Yellow)
-* `[PASS]` **Mass Semantic Standardization:** Deployed an automated AI script to strictly enforce the Polymorphic Nullification Protocol, SBRM mappings, and cryptographic hashes across all ontological nodes, establishing a Zero-Hallucination graph.
+## 3. Current Architecture State (Refined)
+The architecture is now reinforced by a suite of Agentic Integrity Scripts:
+logic_engine.py: Executes the deterministic proofs for accounting roll-ups.
+heal_vault.py: A Gemini 2.5 Flash-powered agent that monitors for "truth decay," ensuring all YAML frontmatter adheres to the Polymorphic Nullification Protocol and Gist Enforcement.
 
-## 4. Next Operational Objectives
+00_Architecture_Integrity_Scanner.py: A non-destructive audit tool that performs real-time cryptographic verification of the entire vault.
+
+sync_signatures.py: A surgical script used to reconcile body content with SHA-256 content_hash properties to maintain a 100% integral state.
+
+## 4. Achieved Milestones  Achieved Milestones (Verified)[PASS] Fundamental Accounting Equation (Assets = Liabilities + Equity).[PASS] Asset/Liability Roll-Ups (Current + Non-Current segments).[PASS] Equity Roll-Forward (Opening Balance $\rightarrow$ P&L Integration $\rightarrow$ Dividends $\rightarrow$ Closing).[PASS] Revenue Dimensional Fan-Out (Multidimensional categorical validation).[PASS] Cryptographic Integrity Sync: Achieved 33/33 Integral Nodes across Ontology, Rules, and Registry layers.[PASS] Variable Re-Keying: Successfully transitioned all parameters_exposed from lists to Dictionary-based mappings (variable: {sbrm_label: value}), enabling complex logic fan-outs.
+
+## 5. Next Operational Objectives
 Our immediate roadmap involves scaling this foundation into a robust ecosystem for global adoption:
 1. **The Semantic Uplift Pipeline:** Designing automated backend agentic scripts to extract flat ERP/Trial Balance data (CSVs) and dynamically mint the semantic Markdown Fact Nodes without manual intervention.
 2. **Decentralized Distribution:** Optimizing the repository structure for seamless distribution and content addressability via IPFS.
