@@ -224,8 +224,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4aef90dfd6ec883e",
+  "active": "123ad21752713224",
   "lastOpenFiles": [
+    "00_Architecture_Integrity_Scanner.py",
+    "New Text Document.txt",
     "00_Architecture/JSON-LD_Frame.md",
     "00_Architecture/00_Architecture_Service_Distribution.md",
     "00_Architecture/00_Architecture_System_Manifest.md",
@@ -238,7 +240,6 @@
     "python logic.py",
     "python logic_engine.py",
     "python logic_engine.pyt.txt",
-    "New Text Document.txt",
     "New Microsoft Word Document.docx",
     "01_Ontology/fact-current-liabilities-2026.md",
     "LodgeiT_Global.md",
@@ -260,7 +261,6 @@
     "02_Rules/rule-sbrm-profit-loss.md",
     "02_Rules/rule-sbrm-liability-rollup.md",
     "02_Rules/rule-sbrm-equity-rollforward.md",
-    "02_Rules/rule-sbrm-asset-rollup.md",
-    "02_Rules/rule-sbrm-accounting-equation.md"
+    "02_Rules/rule-sbrm-asset-rollup.md"
   ]
 }
