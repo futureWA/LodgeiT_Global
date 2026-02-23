@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_Architecture_System_Manifest.md",
+                "file": "00_Architecture/Architecture_System_Manifest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Architecture_System_Manifest"
+              "title": "Architecture_System_Manifest"
             }
           },
           {
@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_ Genesis_Node.md",
+                "file": "00_Architecture/JSON-LD_Frame.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_ Genesis_Node"
+              "title": "JSON-LD_Frame"
             }
           }
         ],
@@ -268,12 +268,12 @@
   },
   "active": "a220e7e020792328",
   "lastOpenFiles": [
+    "00_Architecture/Genesis_Node.md",
+    "00_Architecture/Architecture_System_Manifest.md",
+    "00_Architecture/Architecture_Service_Distribution.md",
+    "00_Architecture/Architecture_SBRM.md",
+    "00_Architecture/Architecture_Cryptographic_Sovereignty.md",
     "00_Architecture/JSON-LD_Frame.md",
-    "00_Architecture/00_Architecture_System_Manifest.md",
-    "00_Architecture/00_Architecture_Service_Distribution.md",
-    "00_Architecture/00_Architecture_SBRM.md",
-    "00_Architecture/00_Architecture_Cryptographic_Sovereignty.md",
-    "00_Architecture/00_ Genesis_Node.md",
     "00_Architecture/00_Architecture_Distribution_Protocol.md",
     "00_Architecture/00_Architecture_System_Manifest2.md",
     "03_Registry/reg-access-control.md",

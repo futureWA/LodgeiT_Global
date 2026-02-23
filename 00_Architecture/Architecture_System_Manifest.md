@@ -21,7 +21,7 @@ economics:
   access_tier: "foundation"
 ---
 
-# 00_Architecture: System Manifest
+# Architecture: System Manifest
 
 ## Executive Summary
 This node serves as the **Genesis Node** for a polymorphic, neurosemantic architecture designed for the accounting and tax domains. It utilizes a "File over App" philosophy, leveraging Markdown and JSON-LD to ensure data sovereignty and cross-domain interoperability.
