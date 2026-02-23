@@ -181,10 +181,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "343380e8e12fb297",
+  "active": "123ad21752713224",
   "lastOpenFiles": [
-    "03_Registry/reg-namespaces-core.md.md",
+    "heal_vault.py",
+    "New Text Document.txt",
     "03_Registry/registry-sbrm-master-ruleset.md",
+    "LodgeiT_Global.md",
+    "03_Registry/reg-namespaces-core.md.md",
     "03_Registry/reg-authorities-trusted.md.md",
     "00_Architecture/00_Architecture.md",
     "02_Rules/rule-sbrm-fixed-assets-net.md",
@@ -210,10 +213,7 @@
     "01_Ontology/def-sbrm-reporting-entity.md",
     "01_Ontology/fact-current-liabilities-2026.md.md",
     "01_Ontology/fact-total-liabilities-2026.md",
-    "01_Ontology/fact-total-equity-2026.md",
-    "01_Ontology/fact-total-assets-2026.md",
     "mapper.py",
-    "mapper.py.txt",
-    "New Text Document.txt"
+    "mapper.py.txt"
   ]
 }
