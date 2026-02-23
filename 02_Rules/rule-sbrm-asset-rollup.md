@@ -4,7 +4,7 @@
 "@id": "urn:uuid:rule-sbrm-asset-rollup"
 ontological_class: "CalculationRule"
 gist_equivalent: "gist:Directive"
-domain_tags: 
+domain_tags:
   - "SBRM"
   - "OIM"
   - "AccountingEquation"
@@ -17,7 +17,7 @@ execution_parameters:
 
 # 3. Deterministic SBRM Bridge (Rule 3)
 # These map the SBRM concepts directly to the variables in the logic block below.
-parameters_exposed: 
+parameters_exposed:
   - variable: "TotalAssets"
     sbrm_label: "urn:uuid:def-sbr-total-assets"
   - variable: "CurrentAssets"
@@ -38,6 +38,7 @@ integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: null
   staleness_flag: false
+  content_hash: "b0da331b494c1830cd0bfbe0a25761cea2337713379e4f7bdb4dc83ffc526a48"
 
 # 6. L402 Economic Layer (Rule 7)
 # This is where the proxy intercepts and generates the Lightning Invoice.

@@ -2,11 +2,13 @@
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-revenue-yellow-sample-001"
 ontological_class: "FinancialFact"
+gist_equivalent: "gist:Fact"
 domain_tags: ["SBRM", "IncomeStatement", "Revenue", "Dimension:Yellow"]
 
 fact_value: 25000.00
 fact_unit: "AUD"
 
+content_hash: "050b6c49e8011d7bc4d42ef077a12252f20017b03d8eaa8689b3867de1b09ebe"
 edges:
   - rel: "sbrm:hasReportingEntity"
     target: "urn:uuid:def-sbrm-reporting-entity"

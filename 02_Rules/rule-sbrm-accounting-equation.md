@@ -2,6 +2,7 @@
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:rule-sbrm-accounting-equation"
 ontological_class: "CalculationRule"
+gist_equivalent: "gist:Directive"
 domain_tags: ["SBRM", "AccountingEquation"]
 
 execution_parameters:
@@ -14,6 +15,8 @@ parameters_exposed:
     sbrm_label: "urn:uuid:def-sbr-total-liabilities"
   - variable: "TotalEquity"
     sbrm_label: "urn:uuid:def-sbr-total-equity"
+
+content_hash: "3903c523adf8325662db57aa9693aab4b9909b1893579585c629605b86f6fc8e"
 
 edges:
   - rel: "gist:appliesTo"

@@ -3,6 +3,8 @@
 "@id": "urn:uuid:fact-profit-loss-sample-001"
 ontological_class: "FinancialFact"
 domain_tags: ["SBRM", "Equity", "IncomeStatement"]
+gist_equivalent: "gist:Event"
+content_hash: "8df75cc0d5e58dec35037bcee77dce0d9acadcb39241dc70499290c5533ff771"
 
 fact_value: 20000.00
 fact_unit: "AUD"

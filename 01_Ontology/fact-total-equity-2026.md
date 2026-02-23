@@ -2,6 +2,7 @@
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-total-equity-sample-001"
 ontological_class: "FinancialFact"
+gist_equivalent: "gist:InformationElement"
 domain_tags: ["SBRM", "BalanceSheet", "Equity"]
 
 fact_value: 45000.00
@@ -20,6 +21,7 @@ edges:
 integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   staleness_flag: false
+content_hash: "114d1672cc23db726c2be25bbddb3994b2cba22a857afdb2b50c92cf3a755800"
 ---
 # Fact: Total Equity
 As of the 2026 reporting period, the entity holds Total Equity valued at $45,000.00 AUD.

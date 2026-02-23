@@ -3,13 +3,13 @@
 "@id": "urn:uuid:rule-sbrm-revenue-fanout"
 ontological_class: "CalculationRule"
 domain_tags: ["SBRM", "IncomeStatement", "DimensionalAggregation"]
-
+gist_equivalent: "gist:Directive"
+content_hash: "e74e978a60e5a34c6571a8c58c69cbbf7bd54326392407eba9b25a38432de9cb"
 execution_parameters:
   payload_format: "Hybrid-LE-Prolog"
-
 parameters_exposed: 
   - variable: "TotalRevenue"
-    sbrm_label: "urn:uuid:def-sbr-revenue" # Links to your existing Total Revenue
+    sbrm_label: "urn:uuid:def-sbr-revenue"
   - variable: "RevRed"
     sbrm_label: "urn:uuid:def-sbr-revenue-red"
   - variable: "RevBlue"
@@ -18,7 +18,6 @@ parameters_exposed:
     sbrm_label: "urn:uuid:def-sbr-revenue-green"
   - variable: "RevYellow"
     sbrm_label: "urn:uuid:def-sbr-revenue-yellow"
-
 edges:
   - rel: "gist:appliesTo"
     target: "urn:uuid:def-sbrm-reporting-entity"

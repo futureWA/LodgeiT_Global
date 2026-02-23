@@ -1,7 +1,9 @@
 ---
+content_hash: "181d47b873adabf63f91a9a08127b6de9adc47e280f96755489f9fa38321a019"
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:rule-sbrm-profit-loss"
 ontological_class: "CalculationRule"
+gist_equivalent: "gist:Directive"
 domain_tags: ["SBRM", "IncomeStatement"]
 
 execution_parameters:
@@ -13,7 +15,7 @@ parameters_exposed:
   - variable: "Expenses"
     sbrm_label: "urn:uuid:def-sbr-expenses"
   - variable: "ProfitLoss"
-    sbrm_label: "urn:uuid:def-sbr-profit-loss" # Links to your existing 2026 P&L Fact
+    sbrm_label: "urn:uuid:def-sbr-profit-loss"
 
 edges:
   - rel: "gist:appliesTo"

@@ -3,6 +3,8 @@
 "@id": "urn:uuid:fact-non-current-liabilities-sample-001"
 ontological_class: "FinancialFact"
 domain_tags: ["SBRM", "BalanceSheet"]
+gist_equivalent: "gist:Fact"
+content_hash: "ef3836d76b00e3188fbc82b86acf73f53c3d53c9edaa6575d1f194b30d79a1c6"
 
 fact_value: 50000.00
 fact_unit: "AUD"

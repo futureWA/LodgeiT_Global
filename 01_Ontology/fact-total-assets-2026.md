@@ -31,6 +31,7 @@ edges:
 
 # 5. Cryptographic Agentic Healing (Rule 5)
 integrity:
+  content_hash: "fc3ec8ee977a84f63062cd47f044877c5c31c2937407a3aeb5dc8877f72abe23"
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: "2027-10-31" # Aligns with your Hillarys property strategy
   staleness_flag: false

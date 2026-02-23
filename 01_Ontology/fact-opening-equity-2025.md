@@ -2,6 +2,7 @@
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-opening-equity-sample-001"
 ontological_class: "FinancialFact"
+gist_equivalent: "gist:Fact"
 domain_tags: ["SBRM", "Equity", "RollForward"]
 
 fact_value: 30000.00
@@ -14,6 +15,7 @@ edges:
     target: "urn:uuid:def-sbrm-reporting-period-2025" # Points to previous year
   - rel: "sbrm:isInstanceOfConcept"
     target: "urn:uuid:def-sbr-opening-equity" 
+content_hash: "6bc25281bbd058c42391679304673083770a9aafa2a6cbbe9f1a0c7ea3d15a64"
 ---
 # Fact: Opening Equity (2025)
 As of the 2025 reporting period, the entity held Opening Equity valued at $30,000.00 AUD.

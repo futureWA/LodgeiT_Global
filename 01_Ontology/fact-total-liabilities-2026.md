@@ -23,6 +23,7 @@ edges:
 integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   staleness_flag: false
+content_hash: "29c0b805cbebffdbc6b077c9fc0c2179780d790f8f710c650b82fa2fd4b11d83"
 ---
 # Fact: Total Liabilities
 As of the 2026 reporting period, the entity holds Total Liabilities valued at $80,000.00 AUD.
