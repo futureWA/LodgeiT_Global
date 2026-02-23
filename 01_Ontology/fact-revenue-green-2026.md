@@ -4,11 +4,12 @@
 ontological_class: "FinancialFact"
 domain_tags: ["SBRM", "IncomeStatement", "Revenue", "Dimension:Green"]
 gist_equivalent: "gist:Information"
-content_hash: "03ad9eed3a08cf727bd5269864e8a454991654300aa98ff6a6a78be63b05a472"
-
+integrity:
+  source_uri: null
+  content_hash: "03ad9eed3a08cf727bd5269864e8a454991654300aa98ff6a6a78be63b05a472"
+parameters_exposed: {}
 fact_value: 25000.00
 fact_unit: "AUD"
-
 edges:
   - rel: "sbrm:hasReportingEntity"
     target: "urn:uuid:def-sbrm-reporting-entity"

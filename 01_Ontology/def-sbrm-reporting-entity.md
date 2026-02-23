@@ -18,7 +18,7 @@ execution_parameters:
 
 # 3. Deterministic SBRM Bridge (Rule 3)
 # Epistemic node: No mathematical variables to expose.
-parameters_exposed: null
+parameters_exposed: {}
 
 # 4. Explicit Edges (Rule 6 - Merkle DAG)
 edges:
@@ -30,6 +30,7 @@ edges:
 # 5. Cryptographic Agentic Healing (Rule 5)
 integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
+  source_uri: null
   validity_horizon: null
   staleness_flag: false
   content_hash: "5acd752d543bc8c342d2a7dfa167ba31c40bd19a7532d96ae91e604130780ec6"
@@ -62,3 +63,4 @@ a unit is a reporting entity if
 a unit is a legal entity if
     the unit is a reporting entity
     and the unit is recognized by a statutory authority.
+```

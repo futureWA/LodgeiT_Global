@@ -4,11 +4,16 @@
 ontological_class: "FinancialFact"
 gist_equivalent: "gist:Fact"
 domain_tags: ["SBRM", "FixedAssets", "GrossValue"]
-content_hash: "9c858e5102e3ce06ec5e9c569461e278b58a9c980cc4e6e66bfe4b34c6576295"
-
+integrity:
+  source_uri: null
+  content_hash: "9c858e5102e3ce06ec5e9c569461e278b58a9c980cc4e6e66bfe4b34c6576295"
+parameters_exposed: {}
+execution_parameters:
+  payload_format: null
+  execution_context: null
+  shacl_shape_ref: null
 fact_value: 100000.00
 fact_unit: "AUD"
-
 edges:
   - rel: "sbrm:hasReportingEntity"
     target: "urn:uuid:def-sbrm-reporting-entity"

@@ -5,7 +5,10 @@ ontological_class: "FinancialFact"
 domain_tags: ["SBRM", "Equity", "Distributions"]
 gist_equivalent: "gist:Fact"
 content_hash: "e4a52063d9c269ccce9eaecc492fe4d8ddef19cc4451601600c6e43eec78aee2"
-
+integrity:
+  source_uri: null
+  content_hash: "e4a52063d9c269ccce9eaecc492fe4d8ddef19cc4451601600c6e43eec78aee2"
+parameters_exposed: {}
 fact_value: 5000.00
 fact_unit: "AUD"
 

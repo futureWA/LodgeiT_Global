@@ -4,11 +4,12 @@
 ontological_class: "FinancialFact"
 domain_tags: ["SBRM", "TrialBalance", "Asset"]
 gist_equivalent: "gist:Fact"
-content_hash: "41a4e696a623be07234369f061487d0ee888be98e7da00820ed56c4dea114ab1"
-
+integrity:
+  source_uri: "urn:uuid:fact-cash-ledger-sample-001"
+  content_hash: "41a4e696a623be07234369f061487d0ee888be98e7da00820ed56c4dea114ab1"
+parameters_exposed: {}
 fact_value: 50000.00
 fact_unit: "AUD"
-
 edges:
   - rel: "sbrm:hasReportingEntity"
     target: "urn:uuid:def-sbrm-reporting-entity"

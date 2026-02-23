@@ -8,6 +8,7 @@ domain_tags:
   - "SBRM"
   - "OIM"
   - "BalanceSheet"
+parameters_exposed: {}
 
 # 2. Polymorphic Execution Interface (Rule 2)
 # Since this is a Data Node, execution parameters are null.
@@ -35,6 +36,7 @@ integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: "2027-10-31" # Aligns with your Hillarys property strategy
   staleness_flag: false
+  source_uri: null
 
 # 6. L402 Economic Layer (Rule 7)
 economics:
@@ -57,3 +59,4 @@ This node represents a single point in the SBRM hypercube. It is not a rule; it 
 the fact 001 asserts that 
     the reporting entity has total assets of 125000.00 AUD
     at the reporting period 2026.
+```

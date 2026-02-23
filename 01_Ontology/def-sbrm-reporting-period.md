@@ -4,7 +4,7 @@
 "@id": "urn:uuid:def-sbrm-reporting-period"
 ontological_class: "StatutoryDefinition"
 gist_equivalent: "gist:TemporalRelation"
-domain_tags: 
+domain_tags:
   - "SBRM"
   - "OIM"
   - "Time"
@@ -16,7 +16,7 @@ execution_parameters:
   shacl_shape_ref: null
 
 # 3. Deterministic SBRM Bridge (Rule 3)
-parameters_exposed: null
+parameters_exposed: {}
 
 # 4. Explicit Edges (Rule 6)
 edges:
@@ -29,6 +29,7 @@ edges:
 integrity:
   content_hash: "d4c824765798da546856432509562478cdc86a69e28142d0b5a42e34b34dee6c"
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
+  source_uri: null
   validity_horizon: null
   staleness_flag: false
 
@@ -59,3 +60,4 @@ a period is a reporting period if
 an instant is a reporting period if
     the instant is a gist temporal relation
     and the instant has a single point in time.
+```

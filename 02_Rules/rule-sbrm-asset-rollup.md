@@ -1,5 +1,4 @@
 ---
-# 1. Epistemic Identity (Keys over Domains)
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:rule-sbrm-asset-rollup"
 ontological_class: "CalculationRule"
@@ -8,15 +7,9 @@ domain_tags:
   - "SBRM"
   - "OIM"
   - "AccountingEquation"
-
-# 2. Polymorphic Execution Interface (Rule 2)
-# Unlike definitions, this node executes math.
 execution_parameters:
   payload_format: "Hybrid-LE-Prolog"
   execution_context: "Any-Compliant-L402-Prolog-Node"
-
-# 3. Deterministic SBRM Bridge (Rule 3)
-# These map the SBRM concepts directly to the variables in the logic block below.
 parameters_exposed:
   - variable: "TotalAssets"
     sbrm_label: "urn:uuid:def-sbr-total-assets"
@@ -24,24 +17,17 @@ parameters_exposed:
     sbrm_label: "urn:uuid:def-sbr-current-assets"
   - variable: "NonCurrentAssets"
     sbrm_label: "urn:uuid:def-sbr-non-current-assets"
-
-# 4. Explicit Edges (Rule 6)
-# The rule only applies when it has a valid Entity and Period.
 edges:
   - rel: "gist:appliesTo"
     target: "urn:uuid:def-sbrm-reporting-entity"
   - rel: "gist:appliesTo"
     target: "urn:uuid:def-sbrm-reporting-period"
-
-# 5. Cryptographic Agentic Healing (Rule 5)
 integrity:
+  source_uri: null
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: null
   staleness_flag: false
   content_hash: "b0da331b494c1830cd0bfbe0a25761cea2337713379e4f7bdb4dc83ffc526a48"
-
-# 6. L402 Economic Layer (Rule 7)
-# This is where the proxy intercepts and generates the Lightning Invoice.
 economics:
   author_id: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   payment_pointer: "$ln.top/lodgeit.com/logic"
@@ -68,3 +54,4 @@ the fact set is valid for asset rollup if
     and the fact set has a CurrentAssets value
     and the fact set has a NonCurrentAssets value
     and the TotalAssets value is exactly the CurrentAssets value + the NonCurrentAssets value.
+```

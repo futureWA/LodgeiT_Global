@@ -1,10 +1,9 @@
-```yaml
 ---
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-non-current-assets-sample-001"
 ontological_class: "FinancialFact"
 gist_equivalent: "gist:MonetaryAmount"
-domain_tags: 
+domain_tags:
   - "SBRM"
   - "BalanceSheet"
 execution_parameters: null
@@ -27,11 +26,12 @@ edges:
   - rel: "sbrm:hasReportingPeriod"
     target: "urn:uuid:def-sbrm-reporting-period"
   - rel: "sbrm:isInstanceOfConcept"
-    target: "urn:uuid:def-sbr-non-current-assets" 
-content_hash: "23dd3c1ffb3df56c7ba668799362ffeba19586f476befe47b11c49c4e708bfd3"
+    target: "urn:uuid:def-sbr-non-current-assets"
 integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   staleness_flag: false
+  source_uri: null
+  content_hash: "23dd3c1ffb3df56c7ba668799362ffeba19586f476befe47b11c49c4e708bfd3"
 ---
 # Fact: Non-Current Assets
 As of the 2026 reporting period, the entity holds Non-Current Assets valued at $75,000.00 AUD.
