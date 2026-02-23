@@ -1,112 +1,101 @@
 import os
-import re
+import glob
+import hashlib
+import time
+import google.generativeai as genai
 
-VAULT_PATH = r"C:\Users\futur\Documents\LodgeiT_Global"
+# Configure the Gemini API client
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
-def run_universal_logic_engine(path):
-    print("--- Open-Source SBRM Logic Engine: Universal Execution ---\n")
-    facts = {}
-    rules = []
+# We use the standard text model
+model = genai.GenerativeModel('gemini-1.5-pro')
 
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            if file.endswith(".md"):
-                with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
-                    content = f.read()
-                    
-                    node_id = re.search(r'"?@id"?:\s*"?([^"\n]+)"?', content)
-                    node_class = re.search(r'"?ontological_class"?:\s*"?([^"\n]+)"?', content)
-                    if not node_id or not node_class: continue
-                    
-                    nid = node_id.group(1).strip()
-                    nclass = node_class.group(1).strip()
-                    
-                    # UPGRADE 1: Engine now ingests WorkingPaperFacts alongside FinancialFacts
-                    if nclass in ["FinancialFact", "WorkingPaperFact"]:
-                        val_match = re.search(r'fact_value:\s*([0-9.-]+)', content)
-                        # Regex adjusted to catch both def-sbr- and def-wp- concept targets
-                        concept_match = re.search(r'"?target"?:\s*"?([^"\n]+(?:def-sbr-|def-wp-)[^"\n]+)"?', content) 
-                        if val_match and concept_match:
-                            facts[concept_match.group(1).strip()] = float(val_match.group(1))
-                            
-                    if nclass == "CalculationRule":
-                        params = re.findall(r'variable:\s*"?([^"\n]+)"?\s*\n\s*sbrm_label:\s*"?([^"\n]+)"?', content)
-                        rules.append({"id": nid, "params": params})
+# The directories containing your Fact Nodes and Rules
+TARGET_DIRS = [
+    "./01_Ontology",
+    "./02_Rules"
+]
 
-    print(f"Discovered {len(facts)} SBRM Facts & Working Papers.")
-    print(f"Discovered {len(rules)} SBRM Rules.\n")
+# The strict system prompt forcing the AI to fix your specific inconsistencies
+SYSTEM_INSTRUCTION = """
+You are an Ontological Extraction and Serialization Agent for a Global Notes architecture.
+I am providing you with a raw Markdown file representing a node in an SBRM multidimensional hypercube. 
+Your task is to repair and standardize the YAML frontmatter according to these strict rules, returning the ENTIRE corrected file (YAML + Body):
+
+1. **Polymorphic Nullification**: If the node is purely epistemic (e.g., 'StatutoryDefinition'), the keys 'payload_format', 'execution_context', and 'shacl_shape_ref' inside 'execution_parameters' MUST be explicitly set to 'null'. The same applies to 'parameters_exposed'.
+2. **Gist Enforcement**: Ensure 'gist_equivalent' is present and correctly maps to the Gist Upper Ontology (e.g., 'gist:Directive', 'gist:Category', 'gist:Event').
+3. **SBRM Labeling**: Inside 'parameters_exposed', every variable MUST have an 'sbrm_label' key. If it does not map to a standard taxonomy, set 'sbrm_label: null'.
+4. **Hash Placeholder**: Leave the 'content_hash' value exactly as "[INJECT_HASH_HERE]". 
+
+Do NOT alter the logical payloads, Prolog code, or explicitly declared edges. Output ONLY the raw Markdown file text. Do not wrap the output in ```markdown backticks.
+"""
+
+def calculate_body_hash(markdown_content):
+    """Calculates the SHA-256 hash of the Markdown body (everything after the YAML)."""
+    parts = markdown_content.split('---')
+    if len(parts) >= 3:
+        body = '---'.join(parts[2:]).strip()
+        return hashlib.sha256(body.encode('utf-8')).hexdigest()
+    return None
+
+def heal_markdown_file(filepath):
+    print(f"Inspecting: {filepath}...")
     
-    for rule in rules:
-        print(f"EXECUTING RULE: {rule['id']}")
-        
-        rule_vars = {var_name: facts.get(sbrm_urn) for var_name, sbrm_urn in rule['params']}
-        
-        for name, val in rule_vars.items():
-            print(f"  -> Found {name}: {val if val is not None else 'MISSING'}")
-            
-        print("  --- Result ---")
-        
-        # Balance Sheet
-        if "TotalEquity" in rule_vars and "TotalAssets" in rule_vars and "TotalLiabilities" in rule_vars and None not in rule_vars.values():
-            if rule_vars["TotalAssets"] == (rule_vars["TotalLiabilities"] + rule_vars["TotalEquity"]):
-                print("  [PASS] Fundamental Accounting Equation balances.\n")
-            else:
-                print("  [FAIL] Balance Sheet contradiction!\n")
+    with open(filepath, 'r', encoding='utf-8') as f:
+        original_content = f.read()
 
-        # Asset Roll-up
-        elif "TotalAssets" in rule_vars and "CurrentAssets" in rule_vars and None not in rule_vars.values():
-            if rule_vars["TotalAssets"] == (rule_vars["CurrentAssets"] + rule_vars["NonCurrentAssets"]):
-                print("  [PASS] Asset Roll-up is mathematically consistent.\n")
+    prompt = f"{SYSTEM_INSTRUCTION}\n\nHere is the file to repair:\n\n{original_content}"
+
+    try:
+        response = model.generate_content(prompt)
+        healed_content = response.text.strip()
+        
+        if healed_content.startswith("```markdown"):
+            healed_content = healed_content[11:]
+        if healed_content.endswith("```"):
+            healed_content = healed_content[:-3]
+            
+        healed_content = healed_content.strip()
+        new_hash = calculate_body_hash(healed_content)
+        
+        if not new_hash:
+            print(f"  [X] Failed to parse body for hashing on {filepath}. Skipping.")
+            return False
+
+        final_content = healed_content.replace("[INJECT_HASH_HERE]", new_hash)
+
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(final_content)
+            
+        print(f"  [v] Successfully repaired and hashed.")
+        return True
+
+    except Exception as e:
+        print(f"  [X] API or Processing Error on {filepath}: {e}")
+        return False
+
+def run_vault_crawler():
+    print("Initiating Semantic Vault Repair Sequence...")
+    print("-" * 50)
+    
+    success_count = 0
+    fail_count = 0
+
+    for directory in TARGET_DIRS:
+        if not os.path.exists(directory):
+            print(f"Directory not found: {directory}. Please run from the vault root.")
+            continue
+            
+        for filepath in glob.glob(f"{directory}/**/*.md", recursive=True):
+            if heal_markdown_file(filepath):
+                success_count += 1
             else:
-                print("  [FAIL] Asset contradiction!\n")
-                
-        # Liability Roll-up
-        elif "TotalLiabilities" in rule_vars and "CurrentLiabilities" in rule_vars and None not in rule_vars.values():
-            if rule_vars["TotalLiabilities"] == (rule_vars["CurrentLiabilities"] + rule_vars["NonCurrentLiabilities"]):
-                print("  [PASS] Liability Roll-up is mathematically consistent.\n")
-            else:
-                print("  [FAIL] Liability contradiction!\n")
-                
-        # Equity Roll-forward
-        elif "OpeningEquity" in rule_vars and "ClosingEquity" in rule_vars and None not in rule_vars.values():
-            if rule_vars["ClosingEquity"] == (rule_vars["OpeningEquity"] + rule_vars["ProfitLoss"] - rule_vars["Dividends"]):
-                print("  [PASS] Equity Roll-Forward (Time Dimension) is mathematically consistent.\n")
-            else:
-                print("  [FAIL] Equity Roll-Forward contradiction!\n")
-                
-        # Dimensional Fan-Out (Revenue)
-        elif "TotalRevenue" in rule_vars and "RevRed" in rule_vars and None not in rule_vars.values():
-            if rule_vars["TotalRevenue"] == (rule_vars["RevRed"] + rule_vars["RevBlue"] + rule_vars["RevGreen"] + rule_vars["RevYellow"]):
-                print("  [PASS] Dimensional Revenue Fan-Out is mathematically consistent.\n")
-            else:
-                print("  [FAIL] Dimensional contradiction: Parts do not equal the Total!\n")
-                
-        # Profit & Loss
-        elif "Revenue" in rule_vars and "Expenses" in rule_vars and "ProfitLoss" in rule_vars and None not in rule_vars.values():
-            if rule_vars["ProfitLoss"] == (rule_vars["Revenue"] - rule_vars["Expenses"]):
-                print("  [PASS] Profit & Loss Statement is mathematically consistent.\n")
-            else:
-                print("  [FAIL] Profit & Loss contradiction!\n")
-                
-        # UPGRADE 2: Bank Reconciliation Cross-Reference
-        elif "LedgerCash" in rule_vars and "StatementCash" in rule_vars and None not in rule_vars.values():
-            if rule_vars["LedgerCash"] == rule_vars["StatementCash"]:
-                print("  [PASS] Bank Reconciliation Working Paper cross-references correctly.\n")
-            else:
-                print("  [FAIL] Working Paper contradiction: Ledger does not match Statement!\n")
-                
-        # UPGRADE 3: Fixed Asset Net Book Value
-        elif "PlantAtCost" in rule_vars and "AccumulatedDep" in rule_vars and "NonCurrentAssets" in rule_vars and None not in rule_vars.values():
-            if rule_vars["NonCurrentAssets"] == (rule_vars["PlantAtCost"] - rule_vars["AccumulatedDep"]):
-                print("  [PASS] Fixed Asset Sub-Ledger ties perfectly to Non-Current Assets.\n")
-            else:
-                print("  [FAIL] Fixed Asset contradiction: Cost minus Dep does not equal Net!\n")
-                
-        else:
-             print("  [PENDING] Missing facts. Cannot execute proof.\n")
+                fail_count += 1
+            
+            time.sleep(2)
+
+    print("-" * 50)
+    print(f"Repair Complete. Healed: {success_count} | Failed: {fail_count}")
 
 if __name__ == "__main__":
-    if os.path.exists(VAULT_PATH):
-        run_universal_logic_engine(VAULT_PATH)
-    else:
-        print("Path not found. Please check VAULT_PATH.")
+    run_vault_crawler()
