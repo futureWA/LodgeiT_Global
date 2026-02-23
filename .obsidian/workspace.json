@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_Architecture_Distribution_Protocol.md",
+                "file": "01_Ontology/fact-cash-ledger-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Architecture_Distribution_Protocol"
+              "title": "fact-cash-ledger-2026"
             }
           }
         ],
@@ -238,11 +238,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "123ad21752713224",
+  "active": "5bc6472f0aa12954",
   "lastOpenFiles": [
+    "01_Ontology/fact-accumulated-depreciation-2026.md",
+    "00_Architecture/00_Architecture_Distribution_Protocol.md",
+    "Uplift_Agent.py",
+    "00_Architecture_Uplift_Agent.py",
     "New Text Document.txt",
     "Links to.md",
-    "00_Architecture/00_Architecture_Distribution_Protocol.md",
     "00_Architecture/JSON-LD_Frame.md",
     "00_Architecture/00_Architecture_Cryptographic_Sovereignty.md",
     "00_Architecture/00_ Genesis_Node.md",
@@ -258,15 +261,12 @@
     "python logic.py",
     "python logic_engine.py",
     "python logic_engine.pyt.txt",
-    "New Microsoft Word Document.docx",
     "01_Ontology/fact-current-liabilities-2026.md",
     "LodgeiT_Global.md",
-    "list-models.py",
     "03_Registry/registry-sbrm-master-ruleset.md",
     "03_Registry/reg-namespaces-core.md.md",
     "03_Registry/reg-authorities-trusted.md.md",
     "02_Rules/rule-sbrm-fixed-assets-net.md",
-    "01_Ontology/fact-accumulated-depreciation-2026.md",
     "01_Ontology/fact-plant-at-cost-2026.md",
     "02_Rules/rule-wp-crossref-bank.md",
     "01_Ontology/wp-bank-statement-2026.md",
