@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_Architecture.md",
+                "file": "01_Ontology/def-sbrm-reporting-entity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Architecture"
+              "title": "def-sbrm-reporting-entity"
             }
           }
         ],
@@ -198,10 +198,15 @@
   },
   "active": "56d775560ded6034",
   "lastOpenFiles": [
+    "00_Architecture/01 Genesis Node.md",
+    "00_Architecture/00_Architecture.md",
+    "logic.py",
+    "python_Logic.py",
+    "python logic.py",
+    "python logic_engine.py",
+    "python logic_engine.pyt.txt",
     "New Text Document.txt",
     "New Microsoft Word Document.docx",
-    "00_Architecture/Genesis Node.md",
-    "00_Architecture/00_Architecture.md",
     "01_Ontology/fact-current-liabilities-2026.md",
     "01_Ontology/def-sbrm-reporting-entity.md",
     "LodgeiT_Global.md",
@@ -219,8 +224,6 @@
     "04_WorkingPapers",
     "00_Architecture/Genesis Boot Node.md",
     "03_Registry/test.md.md",
-    "00_Architecture",
-    "New folder",
     "02_Rules/rule-sbrm-revenue-fanout.md",
     "02_Rules/rule-sbrm-profit-loss.md",
     "02_Rules/rule-sbrm-liability-rollup.md",
@@ -229,8 +232,6 @@
     "02_Rules/rule-sbrm-accounting-equation.md",
     "01_Ontology/fact-current-assets-2026.md",
     "01_Ontology/def-sbrm-reporting-period.md",
-    "01_Ontology/fact-current-liabilities-2026.md.md",
-    "mapper.py",
-    "mapper.py.txt"
+    "01_Ontology/fact-current-liabilities-2026.md.md"
   ]
 }
