@@ -198,13 +198,14 @@
   },
   "active": "56d775560ded6034",
   "lastOpenFiles": [
+    "New Text Document.txt",
+    "New Microsoft Word Document.docx",
     "00_Architecture/Genesis Node.md",
     "00_Architecture/00_Architecture.md",
     "01_Ontology/fact-current-liabilities-2026.md",
     "01_Ontology/def-sbrm-reporting-entity.md",
     "LodgeiT_Global.md",
     "list-models.py",
-    "New Text Document.txt",
     "heal_vault.py",
     "03_Registry/registry-sbrm-master-ruleset.md",
     "03_Registry/reg-namespaces-core.md.md",
@@ -229,7 +230,6 @@
     "01_Ontology/fact-current-assets-2026.md",
     "01_Ontology/def-sbrm-reporting-period.md",
     "01_Ontology/fact-current-liabilities-2026.md.md",
-    "01_Ontology/fact-total-liabilities-2026.md",
     "mapper.py",
     "mapper.py.txt"
   ]
