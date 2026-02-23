@@ -4,7 +4,9 @@
 ontological_class: "CalculationRule"
 domain_tags: ["SBRM", "EquityStatement"]
 gist_equivalent: "gist:Directive"
-content_hash: "d5f76da278590d3860f37ee69abc10360251f4f29b370df5671487c972df7623"
+integrity:
+  source_uri: null
+  content_hash: "d5f76da278590d3860f37ee69abc10360251f4f29b370df5671487c972df7623"
 execution_parameters:
   payload_format: "Hybrid-LE-Prolog"
 parameters_exposed: 
@@ -30,3 +32,4 @@ the fact set is valid for equity roll-forward if
     and the fact set has a Dividends value
     and the fact set has a ClosingEquity value
     and the ClosingEquity value is exactly the OpeningEquity value + the ProfitLoss value - the Dividends value.
+```

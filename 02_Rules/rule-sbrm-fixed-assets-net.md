@@ -1,11 +1,13 @@
-```yaml
 ---
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:rule-sbrm-fixed-assets-net"
 ontological_class: "CalculationRule"
 gist_equivalent: "gist:Directive"
-domain_tags: ["SBRM", "FixedAssets", "NetBookValue"]
-content_hash: "febb658e2319b2d1fa9c4e7a3a39f06bb526f69fa7df860e78ede0c6e006773e"
+domain_tags": ["SBRM", "FixedAssets", "NetBookValue"]
+content_hash: "febb658e2319c2d1fa9c4e7a3a39f06bb526f69fa7df860e78ede0c6e006773e"
+integrity:
+  source_uri: null
+  content_hash: "febb658e2319b2d1fa9c4e7a3a39f06bb526f69fa7df860e78ede0c6e006773e"
 execution_parameters:
   payload_format: "Hybrid-LE-Prolog"
   execution_context: null
@@ -16,7 +18,7 @@ parameters_exposed:
   - variable: "AccumulatedDep"
     sbrm_label: "urn:uuid:def-sbr-accumulated-depreciation"
   - variable: "NonCurrentAssets"
-    sbrm_label: "urn:uuid:def-sbr-non-current-assets" # Links to your existing Balance Sheet fact
+    sbrm_label: "urn:uuid:def-sbr-non-current-assets"
 edges:
   - rel: "gist:appliesTo"
     target: "urn:uuid:def-sbrm-reporting-entity"

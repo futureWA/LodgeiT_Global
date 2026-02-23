@@ -9,8 +9,11 @@ domain_tags:
   - "MasterIndex"
 
 # Polymorphic Nullification Protocol: This is an epistemic index, so execution is null.
-execution_parameters: null
-parameters_exposed: null
+execution_parameters:
+  payload_format: null
+  execution_context: null
+  shacl_shape_ref: null
+parameters_exposed: {}
 
 # Graph Integrity via Explicit Edges: This defines the complete set of all rules.
 edges:
@@ -33,7 +36,7 @@ edges:
 
 integrity:
   source_uri: "internal://clientrelay/registry/master_ruleset"
-  content_hash: "[SHA-256]"
+  content_hash: "06255f4e25a6f1cdbe9cce5c1f7e717a6641318f1325e6ce083f39ca0a1cb969"
   validity_horizon: null
   staleness_flag: false
 

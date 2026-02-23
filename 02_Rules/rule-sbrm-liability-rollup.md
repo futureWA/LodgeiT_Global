@@ -4,10 +4,14 @@
 ontological_class: "CalculationRule"
 gist_equivalent: "gist:Directive"
 domain_tags: ["SBRM", "AccountingEquation"]
-content_hash: "9f5eb33835ffaa524f8c9c5466ec255ee2403ae6b3f8d9266894e1374a98ede7"
+integrity:
+  source_uri: null
+  content_hash: "9f5eb33835ffaa524f8c9c5466ec255ee2403ae6b3f8d9266894e1374a98ede7"
 
 execution_parameters:
-  payload_format: "Hybrid-LE-Prolog"
+  payload_format: null
+  execution_context: null
+  shacl_shape_ref: null
 
 parameters_exposed:
   - variable: "TotalLiabilities"

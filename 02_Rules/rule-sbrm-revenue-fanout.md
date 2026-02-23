@@ -4,7 +4,9 @@
 ontological_class: "CalculationRule"
 domain_tags: ["SBRM", "IncomeStatement", "DimensionalAggregation"]
 gist_equivalent: "gist:Directive"
-content_hash: "e74e978a60e5a34c6571a8c58c69cbbf7bd54326392407eba9b25a38432de9cb"
+integrity:
+  source_uri: null
+  content_hash: "9146073b5938e947db3fa0eb15ff17398f415ad24ba46ba7609c7e79660ddda4"
 execution_parameters:
   payload_format: "Hybrid-LE-Prolog"
 parameters_exposed: 
@@ -33,3 +35,4 @@ the fact set is valid for dimensional aggregation if
     and the fact set has a RevGreen value
     and the fact set has a RevYellow value
     and the TotalRevenue value is exactly the RevRed value + the RevBlue value + the RevGreen value + the RevYellow value.
+```
