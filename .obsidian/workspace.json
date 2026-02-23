@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Registry/registry_reg-access-control.md",
+                "file": "01_Ontology/fact-cash-ledger-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "registry_reg-access-control"
+              "title": "fact-cash-ledger-2026"
             }
           },
           {
@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/JSON-LD_Frame.md",
+                "file": "03_Registry/reg-namespaces-core.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSON-LD_Frame"
+              "title": "reg-namespaces-core"
             }
           }
         ],
@@ -268,17 +268,17 @@
   },
   "active": "a220e7e020792328",
   "lastOpenFiles": [
+    "03_Registry/reg-authorities-trusted.md",
+    "00_Architecture/JSON-LD_Frame.md",
+    "03_Registry/registry_reg-access-control.md",
     "00_Architecture/Genesis_Node.md",
     "00_Architecture/Architecture_System_Manifest.md",
     "00_Architecture/Architecture_Service_Distribution.md",
     "00_Architecture/Architecture_SBRM.md",
     "00_Architecture/Architecture_Cryptographic_Sovereignty.md",
-    "00_Architecture/JSON-LD_Frame.md",
     "00_Architecture/00_Architecture_Distribution_Protocol.md",
     "00_Architecture/00_Architecture_System_Manifest2.md",
     "03_Registry/reg-access-control.md",
-    "03_Registry/reg-authorities-trusted.md.md",
-    "03_Registry/registry_reg-access-control.md",
     "__pycache__/logic.cpython-314.pyc",
     "__pycache__",
     "Change Directory.txt",
@@ -297,7 +297,7 @@
     "01_Ontology/fact-current-liabilities-2026.md",
     "LodgeiT_Global.md",
     "03_Registry/registry-sbrm-master-ruleset.md",
-    "03_Registry/reg-namespaces-core.md.md",
+    "03_Registry/reg-namespaces-core.md",
     "02_Rules/rule-sbrm-fixed-assets-net.md",
     "01_Ontology/fact-plant-at-cost-2026.md",
     "02_Rules/rule-wp-crossref-bank.md",
