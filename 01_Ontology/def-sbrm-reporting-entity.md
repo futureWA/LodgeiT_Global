@@ -4,14 +4,17 @@
 "@id": "urn:uuid:def-sbrm-reporting-entity"
 ontological_class: "StatutoryDefinition"
 gist_equivalent: "gist:LegalEntity"
-domain_tags: 
+domain_tags:
   - "SBRM"
   - "OIM"
   - "Governance"
 
 # 2. Polymorphic Execution Interface (Rule 2)
 # Epistemic node: Deterministic fields explicitly nullified.
-execution_parameters: null
+execution_parameters:
+  payload_format: null
+  execution_context: null
+  shacl_shape_ref: null
 
 # 3. Deterministic SBRM Bridge (Rule 3)
 # Epistemic node: No mathematical variables to expose.
@@ -29,6 +32,7 @@ integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: null
   staleness_flag: false
+  content_hash: "5acd752d543bc8c342d2a7dfa167ba31c40bd19a7532d96ae91e604130780ec6"
 
 # 6. L402 Economic Layer (Rule 7)
 economics:

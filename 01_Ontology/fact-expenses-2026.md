@@ -2,7 +2,9 @@
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-expenses-sample-001"
 ontological_class: "FinancialFact"
+gist_equivalent: "gist:Fact"
 domain_tags: ["SBRM", "IncomeStatement", "Expenses"]
+content_hash: "b2b0bc492c57a6132512366355f112708d900a3668f4956a8fd6c3c4a91860c5"
 
 fact_value: 80000.00
 fact_unit: "AUD"

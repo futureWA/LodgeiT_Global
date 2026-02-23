@@ -10,7 +10,10 @@ domain_tags:
   - "Time"
 
 # 2. Polymorphic Execution Interface (Rule 2)
-execution_parameters: null
+execution_parameters:
+  payload_format: null
+  execution_context: null
+  shacl_shape_ref: null
 
 # 3. Deterministic SBRM Bridge (Rule 3)
 parameters_exposed: null
@@ -24,6 +27,7 @@ edges:
 
 # 5. Cryptographic Agentic Healing (Rule 5)
 integrity:
+  content_hash: "d4c824765798da546856432509562478cdc86a69e28142d0b5a42e34b34dee6c"
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   validity_horizon: null
   staleness_flag: false

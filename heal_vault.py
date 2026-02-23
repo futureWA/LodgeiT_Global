@@ -9,7 +9,7 @@ import google.generativeai as genai
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 # We use the standard text model
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # The directories containing your Fact Nodes and Rules
 TARGET_DIRS = [

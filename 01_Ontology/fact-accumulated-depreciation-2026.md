@@ -1,7 +1,9 @@
+```yaml
 ---
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:fact-accumulated-depreciation-sample-001"
 ontological_class: "FinancialFact"
+gist_equivalent: "gist:Fact"
 domain_tags: ["SBRM", "FixedAssets", "ContraAsset"]
 
 fact_value: 25000.00
@@ -13,7 +15,8 @@ edges:
   - rel: "sbrm:hasReportingPeriod"
     target: "urn:uuid:def-sbrm-reporting-period-2026"
   - rel: "sbrm:isInstanceOfConcept"
-    target: "urn:uuid:def-sbr-accumulated-depreciation" 
+    target: "urn:uuid:def-sbr-accumulated-depreciation"
+content_hash: "5b668f41bbc359974a89ea84a54dac129d1ea4f3326d766af423962988344325"
 ---
 # Fact: Accumulated Depreciation
 The accumulated depreciation against the Plant & Equipment is $25,000.00 AUD.
