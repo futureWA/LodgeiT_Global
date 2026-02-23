@@ -3,19 +3,6 @@
 "@id": "urn:uuid:sys-boot-sequence-sbrm-os-hypercube"
 ontological_class: "SystemDirective"
 gist_equivalent: "gist:Collection"
-domain_tags: ["SBRM", "Neurosemantic-AI", "Open-Source-Architecture"]
-
-project_context:
-  platform: "Open-Source SBRM Hypercube"
-  objective: "Global decentralized financial rule execution and semantic standardization"
-  methodology: "Seattle Method, Standard Business Reporting Model (SBRM), Open Information Model (OIM)"
-  architecture: "Neurosemantic AI, Decentralized Knowledge Graph, File Over App"
----
----
-"@context": "ipfs://bafkreifcontext...[Base_Context]"
-"@id": "urn:uuid:sys-boot-sequence-sbrm-os-hypercube"
-ontological_class: "SystemDirective"
-gist_equivalent: "gist:Collection"
 domain_tags: 
   - "SBRM"
   - "Neurosemantic-AI"
