@@ -1,6 +1,6 @@
 ---
-@context: "ipfs://bafkreifcontext...[Base_Context]"
-@id: "urn:uuid:registry-access-control-l402"
+"@context": "ipfs://bafkreifcontext...[Base_Context]"
+"@id": "urn:uuid:registry-access-control-l402"
 ontological_class: "AccessRegistry"
 gist_equivalent: "gist:License"
 domain_tags:

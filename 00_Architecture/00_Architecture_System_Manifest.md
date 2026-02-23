@@ -1,51 +1,59 @@
 ---
 @context: "ipfs://bafkreifcontext...[Base_Context]"
-@id: "urn:uuid:sys-boot-sequence-sbrm-os-hypercube"
-ontological_class: "SystemDirective"
-gist_equivalent: "gist:Collection"
-domain_tags: 
-  - SBRM
-  - Neurosemantic-AI
-  - Open-Source-Architecture
-  - Polymorphic-Epistemology
-project_context: 
-  platform: "Open-Source SBRM Hypercube"
-  objective: "Global decentralized financial and regulatory logic engine"
-integrity: 
-  source_uri: "internal://architect/00_architecture"
-  content_hash: "[INJECT_HASH_HERE]"
-economics: 
-  author_id: "The_Ontologist"
-  payment_pointer: null
-  l402_rate: 0
-  access_tier: "foundation"
+@id: "urn:uuid:arch-system-manifest-lodgeit-global"
+ontological_class: "SystemManifest"
+domain_tags:
+  - "SBRM"
+  - "Decentralized-Knowledge-Graph"
+  - "L402-Monetization"
+
+project_context:
+  platform: "LodgeiT & ClientRelay Global Fleet"
+  objective: "Index of the decentralized financial rule execution and semantic standardization architecture."
+
+integrity:
+  source_uri: "internal://architect/00_architecture/system_manifest"
+  content_hash: "PENDING_HASH"
 ---
 
-# 00_Architecture: System Manifest
+# LodgeiT Global Fleet: System Manifest
 
-## Executive Summary
-This node serves as the **Genesis Node** for a polymorphic, neurosemantic architecture designed for the accounting and tax domains. It utilizes a "File over App" philosophy, leveraging Markdown and JSON-LD to ensure data sovereignty and cross-domain interoperability.
+## 1. Core Paradigm
+This repository operates on a strict **"File Over App"** and **Neurosemantic AI** architecture. Financial facts, logical rules, and system registries are completely decoupled from relational databases, existing as cryptographically signed Markdown files with JSON-LD/YAML frontmatter. 
 
-## 1. Core Principles
-* **Polymorphism:** Data objects (Facts) are neutral substrates; their "truth" is determined by the Registry/Ruleset applied at the time of execution.
-* **Semantic Grounding:** All nodes are URI-identified and mapped to the **Gist upper-level ontology** to allow non-accounting domains to interface with the hypercube.
-* **Logic Decoupling:** Separation of concerns between **Facts** (01_Ontology), **Rules** (02_Rules), and **Governance** (03_Registry).
+This enables deterministic, zero-hallucination proofs of financial data across a decentralized multidimensional hypercube.
 
-## 2. Epistemological Layering
-This architecture supports multiple "ways of knowing" by allowing different **Registry** plugs:
-* **Regulatory Domain:** SBRM-based accounting and tax compliance.
-* **Economic Domain:** Valuation of energy-correlated assets and debasement analysis.
-* **Logical Domain:** Ground truth verification via Prolog/Datalog predicates.
+## 2. Directory Structure & Domain Roles
 
-## 3. Structural Relations (Edges)
-- **Governs:** `urn:uuid:registry-sbrm-master-ruleset`
-- **Orchestrates:** `01_Ontology/`, `02_Rules/`
-- **Validates:** `04_WorkingPapers/`
+### `00_Architecture/` (The Constitution)
+Governs the structural rules, JSON-LD frames, and distribution protocols of the fleet.
+* **Key File:** `JSON-LD_Frame.md` (Maps internal taxonomy to Gist and SBRM standards).
+* **Key File:** `00_Architecture_Cryptographic_Sovereignty.md` (Defines the SHA-256 node hashing protocol).
 
-## 4. Execution Parameters
-The system boot sequence initiates the **SBRM Logic Engine**, loading the master ruleset to process local Markdown nodes as active logic predicates.
+### `01_Ontology/` (The State)
+The active, machine-readable ledger. Contains the "Ground Truth" financial facts, reporting entities, and periods.
+* **Dynamics:** Expanded automatically via the `Uplift_Agent.py`. Peer nodes form the current state of the graph.
+
+### `02_Rules/` (The Logic)
+The immutable laws of accounting and reporting. Written as deterministic predicates mapping variables to explicit SBRM labels.
+* **Scope:** Covers Fundamental Accounting Equations, Roll-Ups, Fan-Outs, and Profit Verification.
+
+### `03_Registry/` (The Controllers)
+Master indexes for namespace resolution and commercial access.
+* **Key File:** `reg-access-control.md` (Defines L402 Lightning Network API pricing and Macaroon caveats).
+
+## 3. The Agentic Immune System (Python Fleet)
+The vault's integrity and execution are maintained by a suite of automated scripts:
+
+| Agent | Function |
+| :--- | :--- |
+| **`heal_vault.py`** | Uses Gemini Flash to enforce strict YAML/Dictionary standardization across all nodes. |
+| **`sync_signatures.py`** | Surgically hashes node bodies and updates YAML frontmatter without disrupting logic. |
+| **`00_Architecture_Integrity_Scanner.py`** | The Gatekeeper. Audits the vault to ensure $N/N$ nodes are cryptographically perfect. |
+| **`Uplift_Agent.py`** | Ingests flat ERP data (CSVs) and dynamically mints new, hashed semantic peer nodes. |
+| **`logic.py`** | The Universal Inference Engine. Reads the YAML dictionary mappings and executes the deterministic proofs. |
+| **`l402_middleware.py`** | The Gateway. intercepts API requests, issues Lightning invoices, verifies Macaroons, and triggers logic. |
 
 ---
-**Status:** Operational  
-**Revision:** 2026.02.23  
-**Security:** Content Hash Verified
+**Vault Status**: Fleet-Ready
+**Monetization**: L402 Lightning Active
