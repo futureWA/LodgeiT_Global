@@ -1,6 +1,6 @@
 ---
-@context: "ipfs://bafkreifcontext...[Base_Context]"
-@id: "urn:uuid:arch-cryptographic-sovereignty-protocol"
+"@context": "ipfs://bafkreifcontext...[Base_Context]"
+"@id": "urn:uuid:arch-cryptographic-sovereignty-protocol"
 ontological_class: "TechnicalStandard"
 gist_equivalent: "gist:Requirement"
 domain_tags:
@@ -15,7 +15,7 @@ project_context:
 
 integrity:
   source_uri: "internal://architect/00_architecture/cryptographic_sovereignty"
-  content_hash: "[INJECT_HASH_HERE]"
+  content_hash: "PENDING_HASH"
 ---
 
 # LodgeiT Cryptographic Sovereignty Protocol
@@ -35,12 +35,10 @@ The system utilizes a deterministic hashing pipeline to create a unique digital 
 * **Encoding**: UTF-8 byte stream.
 * **Storage**: The resulting 64-character hexadecimal string is stored in the `integrity.content_hash` property of the YAML frontmatter.
 
-
-
 ## 3. The Agentic Healing Cycle
 Integrity is maintained through a continuous loop of verification and repair:
 
-1.  **Extraction (`heal_vault.py`)**: A Gemini 2.5 Flash agent standardizes the frontmatter and prepares the hash placeholder.
+1.  **Extraction (`heal_vault.py`)**: A Gemini agent standardizes the frontmatter and prepares the hash placeholder.
 2.  **Sync (`sync_signatures.py`)**: A surgical Python script recalculates the real-time hash and updates the metadata to match the current body state.
 3.  **Audit (`00_Architecture_Integrity_Scanner.py`)**: A non-destructive scanner compares the stored hash against the actual body hash. If a mismatch is detected, the node is quarantined from the inference engine.
 

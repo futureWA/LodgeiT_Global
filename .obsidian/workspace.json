@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_Architecture_System_Manifest.md",
+                "file": "00_Architecture/00_ Genesis_Node.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Architecture_System_Manifest"
+              "title": "00_ Genesis_Node"
             }
           }
         ],
@@ -268,8 +268,13 @@
   },
   "active": "a220e7e020792328",
   "lastOpenFiles": [
-    "00_Architecture/00_Architecture_Service_Distribution.md",
+    "00_Architecture/JSON-LD_Frame.md",
     "00_Architecture/00_Architecture_System_Manifest.md",
+    "00_Architecture/00_Architecture_Service_Distribution.md",
+    "00_Architecture/00_Architecture_SBRM.md",
+    "00_Architecture/00_Architecture_Cryptographic_Sovereignty.md",
+    "00_Architecture/00_ Genesis_Node.md",
+    "00_Architecture/00_Architecture_Distribution_Protocol.md",
     "00_Architecture/00_Architecture_System_Manifest2.md",
     "03_Registry/reg-access-control.md",
     "03_Registry/reg-authorities-trusted.md.md",
@@ -281,14 +286,9 @@
     "l402_middleware.py",
     "01_Ontology/fact-cash-ledger-2026.md",
     "01_Ontology/fact-accumulated-depreciation-2026.md",
-    "00_Architecture/00_Architecture_Distribution_Protocol.md",
     "Uplift_Agent.py",
     "00_Architecture_Uplift_Agent.py",
     "Links to.md",
-    "00_Architecture/JSON-LD_Frame.md",
-    "00_Architecture/00_Architecture_Cryptographic_Sovereignty.md",
-    "00_Architecture/00_ Genesis_Node.md",
-    "00_Architecture/00_Architecture_SBRM.md",
     "01_Ontology/def-sbrm-reporting-entity.md",
     "sync_signatures.py",
     "00_Architecture_Integrity_Scanner.py",
