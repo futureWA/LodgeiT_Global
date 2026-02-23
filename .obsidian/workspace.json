@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Rules/rule-sbrm-fixed-assets-net.md",
+                "file": "03_Registry/registry-sbrm-master-ruleset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rule-sbrm-fixed-assets-net"
+              "title": "registry-sbrm-master-ruleset"
             }
           }
         ]
@@ -183,16 +183,17 @@
   },
   "active": "343380e8e12fb297",
   "lastOpenFiles": [
-    "01_Ontology/fact-accumulated-depreciation-2026.md",
+    "03_Registry/reg-namespaces-core.md.md",
+    "03_Registry/registry-sbrm-master-ruleset.md",
+    "03_Registry/reg-authorities-trusted.md.md",
+    "00_Architecture/00_Architecture.md",
     "02_Rules/rule-sbrm-fixed-assets-net.md",
+    "01_Ontology/fact-accumulated-depreciation-2026.md",
     "01_Ontology/fact-plant-at-cost-2026.md",
     "02_Rules/rule-wp-crossref-bank.md",
     "01_Ontology/wp-bank-statement-2026.md",
     "01_Ontology/fact-cash-ledger-2026.md",
-    "00_Architecture/00_Architecture.md",
     "04_WorkingPapers",
-    "03_Registry/reg-authorities-trusted.md.md",
-    "03_Registry/reg-namespaces-core.md.md",
     "00_Architecture/Genesis Boot Node.md",
     "03_Registry/test.md.md",
     "00_Architecture",
@@ -211,7 +212,6 @@
     "01_Ontology/fact-total-liabilities-2026.md",
     "01_Ontology/fact-total-equity-2026.md",
     "01_Ontology/fact-total-assets-2026.md",
-    "01_Ontology/fact-revenue-yellow-2026.md",
     "mapper.py",
     "mapper.py.txt",
     "New Text Document.txt"
