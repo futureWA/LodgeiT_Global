@@ -3,7 +3,7 @@
 "@id": "urn:uuid:fact-opening-equity-sample-001"
 ontological_class: "FinancialFact"
 gist_equivalent: "gist:Fact"
-domain_tags: ["SBRM", "Equity", "RollForward"]
+domain_tags": ["SBRM", "Equity", "RollForward"]
 integrity:
   source_uri: null
   content_hash: "6bc25281bbd058c42391679304673083770a9aafa2a6cbbe9f1a0c7ea3d15a64"

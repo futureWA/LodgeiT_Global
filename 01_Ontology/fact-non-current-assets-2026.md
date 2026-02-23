@@ -6,7 +6,7 @@ gist_equivalent: "gist:MonetaryAmount"
 domain_tags:
   - "SBRM"
   - "BalanceSheet"
-execution_parameters: null
+execution_parameters: {}
 parameters_exposed:
   fact_value:
     sbrm_label: "sbrm:FactValue"

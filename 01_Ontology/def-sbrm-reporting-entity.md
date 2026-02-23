@@ -1,5 +1,4 @@
 ---
-# 1. Epistemic Identity (Keys over Domains)
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:def-sbrm-reporting-entity"
 ontological_class: "StatutoryDefinition"
@@ -8,34 +7,22 @@ domain_tags:
   - "SBRM"
   - "OIM"
   - "Governance"
-
-# 2. Polymorphic Execution Interface (Rule 2)
-# Epistemic node: Deterministic fields explicitly nullified.
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
-
-# 3. Deterministic SBRM Bridge (Rule 3)
-# Epistemic node: No mathematical variables to expose.
 parameters_exposed: {}
-
-# 4. Explicit Edges (Rule 6 - Merkle DAG)
 edges:
   - rel: "gist:isContainedIn"
     target: "ipfs://bafybeig...[SBRM_Report_Frame_CID]"
   - rel: "gist:hasPart"
-    target: "urn:uuid:def-sbrm-entity-identifier" # Link to LEI or ABN definition
-
-# 5. Cryptographic Agentic Healing (Rule 5)
+    target: "urn:uuid:def-sbrm-entity-identifier"
 integrity:
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
-  source_uri: null
+  source_uri: "urn:uuid:def-sbrm-reporting-entity"
   validity_horizon: null
   staleness_flag: false
-  content_hash: "5acd752d543bc8c342d2a7dfa167ba31c40bd19a7532d96ae91e604130780ec6"
-
-# 6. L402 Economic Layer (Rule 7)
+  content_hash: "abb52ee94afd41530fd1172ac2c399f5c7772c63b0bab9aae56e3b51f714945d"
 economics:
   author_id: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   payment_pointer: null

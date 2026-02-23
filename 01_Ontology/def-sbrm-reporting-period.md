@@ -1,5 +1,4 @@
 ---
-# 1. Epistemic Identity (Keys over Domains)
 "@context": "ipfs://bafkreifcontext...[Base_Context]"
 "@id": "urn:uuid:def-sbrm-reporting-period"
 ontological_class: "StatutoryDefinition"
@@ -8,32 +7,22 @@ domain_tags:
   - "SBRM"
   - "OIM"
   - "Time"
-
-# 2. Polymorphic Execution Interface (Rule 2)
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
-
-# 3. Deterministic SBRM Bridge (Rule 3)
 parameters_exposed: {}
-
-# 4. Explicit Edges (Rule 6)
 edges:
   - rel: "gist:isContainedIn"
     target: "ipfs://bafybeig...[SBRM_Report_Frame_CID]"
   - rel: "gist:refersTo"
     target: "urn:uuid:def-sbrm-reporting-entity"
-
-# 5. Cryptographic Agentic Healing (Rule 5)
 integrity:
   content_hash: "d4c824765798da546856432509562478cdc86a69e28142d0b5a42e34b34dee6c"
   source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   source_uri: null
   validity_horizon: null
   staleness_flag: false
-
-# 6. L402 Economic Layer (Rule 7)
 economics:
   author_id: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
   payment_pointer: null

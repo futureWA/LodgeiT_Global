@@ -15,6 +15,7 @@ TARGET_DIRS = ["./01_Ontology", "./02_Rules", "./03_Registry"]
 SYSTEM_INSTRUCTION = """
 You are an Ontological Extraction and Serialization Agent for a Global Notes architecture.
 I am providing you with a raw Markdown file representing a node in an SBRM multidimensional hypercube. 
+Inside 'parameters_exposed', you MUST use a dictionary format { variable_name: { sbrm_label: label_value } }. DO NOT use bulleted lists or arrays.
 
 YOUR MISSION: Repair and standardize the YAML frontmatter. If fields are 'Empty' or 'null', you MUST initialize them into valid YAML dictionary structures so they are machine-parsable.
 
