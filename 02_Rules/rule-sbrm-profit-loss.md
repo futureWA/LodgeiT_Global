@@ -1,27 +1,30 @@
 ---
-"@context": "ipfs://bafkreifcontext...[Base_Context]"
-"@id": "urn:uuid:rule-sbrm-profit-loss"
-ontological_class: "CalculationRule"
-gist_equivalent: "gist:Directive"
-domain_tags: ["SBRM", "IncomeStatement"]
+'@context': ipfs://bafkreifcontext...[Base_Context]
+'@id': urn:uuid:rule-sbrm-profit-loss
+ontological_class: CalculationRule
+gist_equivalent: gist:Directive
+domain_tags:
+- SBRM
+- IncomeStatement
 integrity:
   source_uri: null
-  content_hash: "181d47b873adabf63f91a9a08127b6de9adc47e280f96755489f9fa38321a019"
+  content_hash: 741a1eb9a90adf8d50346c1db163fa5410d5e61890bfa5b11a660434892d3173
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
 parameters_exposed:
-  - variable: "Revenue"
-    sbrm_label: "urn:uuid:def-sbr-revenue"
-  - variable: "Expenses"
-    sbrm_label: "urn:uuid:def-sbr-expenses"
-  - variable: "ProfitLoss"
-    sbrm_label: "urn:uuid:def-sbr-profit-loss"
+  Revenue:
+    sbrm_label: urn:uuid:def-sbr-revenue
+  Expenses:
+    sbrm_label: urn:uuid:def-sbr-expenses
+  ProfitLoss:
+    sbrm_label: urn:uuid:def-sbr-profit-loss
 edges:
-  - rel: "gist:appliesTo"
-    target: "urn:uuid:def-sbrm-reporting-entity"
+- rel: gist:appliesTo
+  target: urn:uuid:def-sbrm-reporting-entity
 ---
+
 # SBRM Consistency Rule: Profit & Loss
 
 ## Epistemological Definition (Logical English)

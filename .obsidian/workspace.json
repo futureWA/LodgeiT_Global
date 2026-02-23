@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Architecture/00_Architecture_Service_Distribution.md",
+                "file": "00_Architecture/00_Architecture_SBRM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Architecture_Service_Distribution"
+              "title": "00_Architecture_SBRM"
             }
           }
         ],
@@ -224,15 +224,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "123ad21752713224",
+  "active": "4aef90dfd6ec883e",
   "lastOpenFiles": [
-    "00_Architecture_Integrity_Scanner.py",
-    "New Text Document.txt",
-    "00_Architecture/JSON-LD_Frame.md",
+    "00_Architecture/00_ Genesis_Node.md",
     "00_Architecture/00_Architecture_Service_Distribution.md",
+    "sync_signatures.py",
+    "New Text Document.txt",
+    "00_Architecture_Integrity_Scanner.py",
+    "00_Architecture/JSON-LD_Frame.md",
     "00_Architecture/00_Architecture_System_Manifest.md",
     "00_Architecture/00_Architecture_SBRM.md",
-    "00_Architecture/00_ Genesis_Node.md",
     "01_Ontology/def-sbrm-reporting-period.md",
     "01_Ontology/def-sbrm-reporting-entity.md",
     "logic.py",
@@ -244,7 +245,6 @@
     "01_Ontology/fact-current-liabilities-2026.md",
     "LodgeiT_Global.md",
     "list-models.py",
-    "heal_vault.py",
     "03_Registry/registry-sbrm-master-ruleset.md",
     "03_Registry/reg-namespaces-core.md.md",
     "03_Registry/reg-authorities-trusted.md.md",
@@ -254,7 +254,6 @@
     "02_Rules/rule-wp-crossref-bank.md",
     "01_Ontology/wp-bank-statement-2026.md",
     "01_Ontology/fact-cash-ledger-2026.md",
-    "04_WorkingPapers",
     "00_Architecture/Genesis Boot Node.md",
     "03_Registry/test.md.md",
     "02_Rules/rule-sbrm-revenue-fanout.md",

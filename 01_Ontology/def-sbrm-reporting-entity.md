@@ -1,33 +1,33 @@
 ---
-"@context": "ipfs://bafkreifcontext...[Base_Context]"
-"@id": "urn:uuid:def-sbrm-reporting-entity"
-ontological_class: "StatutoryDefinition"
-gist_equivalent: "gist:LegalEntity"
+'@context': ipfs://bafkreifcontext...[Base_Context]
+'@id': urn:uuid:def-sbrm-reporting-entity
+ontological_class: StatutoryDefinition
+gist_equivalent: gist:LegalEntity
 domain_tags:
-  - "SBRM"
-  - "OIM"
-  - "Governance"
+- SBRM
+- OIM
+- Governance
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
 parameters_exposed: {}
 edges:
-  - rel: "gist:isContainedIn"
-    target: "ipfs://bafybeig...[SBRM_Report_Frame_CID]"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:def-sbrm-entity-identifier"
+- rel: gist:isContainedIn
+  target: ipfs://bafybeig...[SBRM_Report_Frame_CID]
+- rel: gist:hasPart
+  target: urn:uuid:def-sbrm-entity-identifier
 integrity:
-  source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
-  source_uri: "urn:uuid:def-sbrm-reporting-entity"
+  source_authority: nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]
+  source_uri: urn:uuid:def-sbrm-reporting-entity
   validity_horizon: null
   staleness_flag: false
-  content_hash: "abb52ee94afd41530fd1172ac2c399f5c7772c63b0bab9aae56e3b51f714945d"
+  content_hash: abb52ee94afd41530fd1172ac2c399f5c7772c63b0bab9aae56e3b51f714945d
 economics:
-  author_id: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
+  author_id: nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]
   payment_pointer: null
   l402_rate: 0
-  access_tier: "public_infrastructure"
+  access_tier: public_infrastructure
 ---
 
 # SBRM: Reporting Entity

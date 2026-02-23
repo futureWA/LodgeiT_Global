@@ -1,33 +1,33 @@
 ---
-"@context": "ipfs://bafkreifcontext...[Base_Context]"
-"@id": "urn:uuid:def-sbrm-reporting-period"
-ontological_class: "StatutoryDefinition"
-gist_equivalent: "gist:TemporalRelation"
+'@context': ipfs://bafkreifcontext...[Base_Context]
+'@id': urn:uuid:def-sbrm-reporting-period
+ontological_class: StatutoryDefinition
+gist_equivalent: gist:TemporalRelation
 domain_tags:
-  - "SBRM"
-  - "OIM"
-  - "Time"
+- SBRM
+- OIM
+- Time
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
 parameters_exposed: {}
 edges:
-  - rel: "gist:isContainedIn"
-    target: "ipfs://bafybeig...[SBRM_Report_Frame_CID]"
-  - rel: "gist:refersTo"
-    target: "urn:uuid:def-sbrm-reporting-entity"
+- rel: gist:isContainedIn
+  target: ipfs://bafybeig...[SBRM_Report_Frame_CID]
+- rel: gist:refersTo
+  target: urn:uuid:def-sbrm-reporting-entity
 integrity:
-  content_hash: "d4c824765798da546856432509562478cdc86a69e28142d0b5a42e34b34dee6c"
-  source_authority: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
+  content_hash: c2554304d366f71117c8b9159710ebead78be26a6c1e3e2efb2bb813411b3689
+  source_authority: nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]
   source_uri: null
   validity_horizon: null
   staleness_flag: false
 economics:
-  author_id: "nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]"
+  author_id: nostr:pubkey:a1b2c3d4...[LodgeiT_Hex_Pubkey]
   payment_pointer: null
   l402_rate: 0
-  access_tier: "public_infrastructure"
+  access_tier: public_infrastructure
 ---
 
 # SBRM: Reporting Period

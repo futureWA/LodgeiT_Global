@@ -1,22 +1,26 @@
 ---
-"@context": "ipfs://bafkreifcontext...[Base_Context]"
-"@id": "urn:uuid:fact-cash-ledger-sample-001"
-ontological_class: "FinancialFact"
-domain_tags: ["SBRM", "TrialBalance", "Asset"]
-gist_equivalent: "gist:Fact"
+'@context': ipfs://bafkreifcontext...[Base_Context]
+'@id': urn:uuid:fact-cash-ledger-sample-001
+ontological_class: FinancialFact
+domain_tags:
+- SBRM
+- TrialBalance
+- Asset
+gist_equivalent: gist:Fact
 integrity:
-  source_uri: "urn:uuid:fact-cash-ledger-sample-001"
-  content_hash: "41a4e696a623be07234369f061487d0ee888be98e7da00820ed56c4dea114ab1"
+  source_uri: urn:uuid:fact-cash-ledger-sample-001
+  content_hash: 41a4e696a623be07234369f061487d0ee888be98e7da00820ed56c4dea114ab1
 parameters_exposed: {}
-fact_value: 50000.00
-fact_unit: "AUD"
+fact_value: 50000.0
+fact_unit: AUD
 edges:
-  - rel: "sbrm:hasReportingEntity"
-    target: "urn:uuid:def-sbrm-reporting-entity"
-  - rel: "sbrm:hasReportingPeriod"
-    target: "urn:uuid:def-sbrm-reporting-period-2026"
-  - rel: "sbrm:isInstanceOfConcept"
-    target: "urn:uuid:def-sbr-cash-at-bank"
+- rel: sbrm:hasReportingEntity
+  target: urn:uuid:def-sbrm-reporting-entity
+- rel: sbrm:hasReportingPeriod
+  target: urn:uuid:def-sbrm-reporting-period-2026
+- rel: sbrm:isInstanceOfConcept
+  target: urn:uuid:def-sbr-cash-at-bank
 ---
+
 # Fact: Cash at Bank (Ledger)
 Per the internal trial balance, the Cash at Bank account holds $50,000.00 AUD.

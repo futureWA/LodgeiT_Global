@@ -1,50 +1,44 @@
 ---
-"@context": "https://schema.clientrelay.io/v1/context.jsonld"
-"@id": "urn:uuid:registry-sbrm-master-ruleset"
-ontological_class: "RuleRegistry"
-gist_equivalent: "gist:Collection"
-domain_tags: 
-  - "SBRM"
-  - "OperativeLogic"
-  - "MasterIndex"
-
-# Polymorphic Nullification Protocol: This is an epistemic index, so execution is null.
+'@context': https://schema.clientrelay.io/v1/context.jsonld
+'@id': urn:uuid:registry-sbrm-master-ruleset
+ontological_class: RuleRegistry
+gist_equivalent: gist:Collection
+domain_tags:
+- SBRM
+- OperativeLogic
+- MasterIndex
 execution_parameters:
   payload_format: null
   execution_context: null
   shacl_shape_ref: null
 parameters_exposed: {}
-
-# Graph Integrity via Explicit Edges: This defines the complete set of all rules.
 edges:
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-accounting-equation"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-asset-rollup"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-equity-rollforward"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-fixed-assets-net"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-liability-rollup"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-profit-loss"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-sbrm-revenue-fanout"
-  - rel: "gist:hasPart"
-    target: "urn:uuid:rule-wp-crossref-bank"
-
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-accounting-equation
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-asset-rollup
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-equity-rollforward
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-fixed-assets-net
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-liability-rollup
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-profit-loss
+- rel: gist:hasPart
+  target: urn:uuid:rule-sbrm-revenue-fanout
+- rel: gist:hasPart
+  target: urn:uuid:rule-wp-crossref-bank
 integrity:
-  source_uri: "internal://clientrelay/registry/master_ruleset"
-  content_hash: "06255f4e25a6f1cdbe9cce5c1f7e717a6641318f1325e6ce083f39ca0a1cb969"
+  source_uri: internal://clientrelay/registry/master_ruleset
+  content_hash: 06255f4e25a6f1cdbe9cce5c1f7e717a6641318f1325e6ce083f39ca0a1cb969
   validity_horizon: null
   staleness_flag: false
-
 economics:
-  author_id: "System_Architect"
+  author_id: System_Architect
   payment_pointer: null
   l402_rate: 0
-  access_tier: "public_infrastructure"
+  access_tier: public_infrastructure
 ---
 
 # SBRM Master Rule Registry
